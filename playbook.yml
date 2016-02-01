@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  any_errors_fatal: true
+  vars_files:
+    - group_vars/all
+  roles:
+    - apt
+    - ntp
+    - quagga
